@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package details;
+
+service Details {
+  rpc GetDetails(BookRequest) returns (DetailList);
+}
+
+message BookRequest {
+  string book_id = 1;
+}
+
+message Detail {
+  string title = 1;
+  string description = 2;
+}
+
+message DetailList {
+  repeated Detail details = 1;
+  string version = 2;
+}

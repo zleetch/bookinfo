@@ -29,7 +29,7 @@ impl ReviewRepository for InMemoryReviewRepository {
                 Review {
                     reviewer: "Ucok".into(),
                     comment: "Rekomendasi banget sih.".into(),
-                }
+                },
             ]
         };
 
